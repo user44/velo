@@ -12,9 +12,16 @@
 	<meta name="description" content="">
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<!-- <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -22,6 +29,7 @@
 
 	<link rel="stylesheet" href="libs/materialize/dist/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -52,10 +60,10 @@
 							<nav>
 								 <div class="nav-wrapper">
 									 <a href="/" class="brand-logo">Велопокатушки в Новопскове</a>
-									 <p class="right nav-desc">Новопсков, Луганская обл., Украина</p>
-									 <!-- <ul class="right hide-on-med-and-down">
-						         <li><a href="https://vk.com/id14649620" target="_blank"><i class="material-icons">contact_mail</i></a></li>
-						       </ul> -->
+									 <!-- <p class="right nav-desc">Новопсков, Луганская обл., Украина</p> -->
+									 <ul id="nav-mobile" class="right hide-on-med-and-down">
+						         <li><a href="#how-find-popup" class="popup-with-zoom-anim">Как нас найти?</a></li>
+						       </ul>
 								 </div>
 							 </nav>
 							
@@ -74,6 +82,10 @@
 		<div class="footer-copyright">
 			<div class="container">
 			© 2018. Новопсков, Луганская обл., Украина
+			<div class="right soc-box">
+				<a href="https://vk.com/id14649620" target="_blank"><i class="fab fa-vk"></i></a>
+				<a href="https://t.me/antoha_xr2350" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+			</div>
 			</div>
 		</div>
 	</footer>	
@@ -110,11 +122,23 @@
 				<input id="comment-input" name="Комментарий" type="text" class="validate">
 				<label for="comment-input">Комментарий (если есть)</label>
 			</div>
+
+			<!-- <p>
+	      <label>
+	        <input type="checkbox" class="filled-in" checked="checked" required/>
+	        <span class="checked">Я точно поеду</span>
+	      </label>
+	    </p> -->
 			
 			<button class="btn waves-effect waves-light btn-large" type="submit">Отправить заявку
 				<i class="material-icons right">send</i>
 			</button>
 		</form>
+	</div>
+
+	<div id="how-find-popup" class="zoom-anim-dialog mfp-hide mpopup">
+		<div class="title">Никак!</div>
+		<div class="subtitle">Мы сами вас найдем. Просто оставьте заявку на сайте или напишите в <a href="https://t.me/antoha_xr2350" target="_blank">telegram</a> или <a href="https://vk.com/id14649620" target="_blank">vk</a></div>
 	</div>
 
 

@@ -82,6 +82,15 @@ body
 		&.fillWidth
 			width: 100%
 
+nav
+	background-color: #ee6e73a3
+	transition: .3s
+	&:hover
+		background-color: #ee6e73
+	ul
+		a
+			font-size: 1.4rem
+
 
 //Custom Styles Here
 header
@@ -103,7 +112,7 @@ a.btn
 
 .main-head
 	.submit-request
-		margin: 200px 0 0
+		margin: 225px 0 0
 		display: flex
 		justify-content: center
 		align-items: center
@@ -116,9 +125,11 @@ a.btn
 	a
 		color: #fff
 		text-decoration: none
+		outline: none
 		&:hover
 			text-decoration: none
 			color: #fff
+
 .nav-desc
 	margin: 0
 .header-content
@@ -129,6 +140,15 @@ a.btn
 	.footer-copyright
 		padding: 25px 0
 		font-size: 16px
+
+.soc-box
+	a
+		color: #fff
+		display: inline-block
+		margin: 0 5px
+	i
+		font-size: 25px
+
 
 
 
@@ -152,6 +172,8 @@ a.btn
 		margin: 0 0 40px
 		font-size: 23px
 		text-transform: uppercase
+	.subtitle
+		font-size: 1.7rem
 
 	input:not([type]),
 	input[type=text]:not(.browser-default),
@@ -172,6 +194,9 @@ a.btn
 		label
 			font-size: 1.7rem
 			transform: translateY(2px)
+	[type="checkbox"]+span:not(.lever)
+		margin: 0 0 20px
+		font-size: 1.7rem
 
 
 
