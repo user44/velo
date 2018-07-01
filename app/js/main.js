@@ -41,9 +41,8 @@ $(document).ready(function() {
 	// 	$('.order-box .price-box').matchHeight({byRow: false});
 	// }
 
-	// M.updateTextFields();
-	// $('#textarea1').val('New Text');
-  // M.textareaAutoResize($('#textarea1'));
+	// m tabs
+	$('.tabs').tabs();
 
 	//magnific-popup
 	$('.popup-with-zoom-anim').magnificPopup({
@@ -62,6 +61,21 @@ $(document).ready(function() {
 		mainClass: 'my-mfp-zoom-in'
 	});
 
+	$('.popup-with-move-anim').magnificPopup({
+		type: 'inline',
+
+		fixedContentPos: false,
+		fixedBgPos: true,
+
+		overflowY: 'auto',
+
+		closeBtnInside: true,
+		preloader: false,
+		
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-slide-bottom'
+	});
 	
 
 	
