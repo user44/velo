@@ -1,0 +1,180 @@
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+/*======== grid =========*/
+@import ../app/libs/bootstrap/grid.min
+/*======== fonts =========*/
+@import fonts
+// @import iconfont
+/*======== sprite =========*/
+// @import ../app/img/sprite/sprite
+/*======== css libs =========*/
+@import ../app/libs/magnific-popup/magnific-popup
+
+
+/*======================= Styles ==========================*/
+//Common Styles Here
+body
+	font-family: "RobotoRegular"
+	color: #000
+	font-size: 14px
+
+//coverr
+.homepage-hero-module
+	border-right: none
+	border-left: none
+	position: relative
+	position: absolute
+	height: 600px
+	width: 100%
+	overflow: hidden
+
+.no-video .video-container video, .touch .video-container video
+	display: none
+
+.no-video .video-container .poster, .touch .video-container .poster
+	display: block !important
+
+.video-container
+	position: absolute
+	// bottom: 0%
+	left: 0
+	top: -39%
+	height: 100%
+	width: 100%
+	// overflow: hidden
+	background: #000
+	.poster img
+		width: 100%
+		bottom: 0
+		position: absolute
+	.filter
+		z-index: 100
+		position: absolute
+		background: rgba(0, 0, 0, 0.6) url(../img/black-dots.png)
+		width: 100%
+		height: 100%
+	video
+		position: absolute
+		z-index: 0
+		top: 0
+		// height: 1000px
+		&.fillWidth
+			width: 100%
+
+
+//Custom Styles Here
+header
+	margin: 0 0 30px
+	min-height: 600px
+	position: relative
+button.btn,
+a.btn
+	font-size: 14px
+	color: #fff
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		color: #fff
+
+.event-send
+	i
+		font-size: 2.6rem
+
+.main-head
+	.submit-request
+		margin: 200px 0 0
+		display: flex
+		justify-content: center
+		align-items: center
+		.btn
+			box-shadow: 0 0 191px 138px rgba(0,0,0, 0.4)
+
+
+.nav-wrapper
+	padding: 0 10px
+	a
+		color: #fff
+		text-decoration: none
+		&:hover
+			text-decoration: none
+			color: #fff
+.nav-desc
+	margin: 0
+.header-content
+	position: relative
+	z-index: 200
+.page-footer
+	padding-top: 0
+	.footer-copyright
+		padding: 25px 0
+		font-size: 16px
+
+
+
+
+
+
+
+
+
+//POPUP
+.mpopup
+	background: white
+	padding: 20px 30px 40px
+	text-align: left
+	max-width: 400px
+	margin: 40px auto
+	position: relative
+	text-align: center
+	border-radius: 2px
+	.title
+		margin: 0 0 40px
+		font-size: 23px
+		text-transform: uppercase
+
+	input:not([type]),
+	input[type=text]:not(.browser-default),
+	input[type=password]:not(.browser-default),
+	input[type=email]:not(.browser-default),
+	input[type=url]:not(.browser-default),
+	input[type=time]:not(.browser-default),
+	input[type=date]:not(.browser-default),
+	input[type=datetime]:not(.browser-default),
+	input[type=datetime-local]:not(.browser-default),
+	input[type=tel]:not(.browser-default),
+	input[type=number]:not(.browser-default),
+	input[type=search]:not(.browser-default),
+	textarea.materialize-textarea
+		font-size: 2rem
+	.input-field
+		margin: 0 0 40px
+		label
+			font-size: 1.7rem
+			transform: translateY(2px)
+
+
+
+//================== ALWAYS END ================//
+@import "_media.sass"
+
