@@ -17,29 +17,62 @@ $(document).ready(function() {
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
-	//Ajax sendform
-	$(".form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Спасибо за заявку!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
-
 	//matchheight
 	// const mq = window.matchMedia( "(min-width: 768px)" );
 	// if (mq.matches) {
 	// 	$('.order-box .title').matchHeight({byRow: false});
 	// 	$('.order-box .price-box').matchHeight({byRow: false});
 	// }
+
+	//Ajax sendform
+	$("form.form").submit(function(e) {
+		var th = $(this);
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize(),
+			error: function() {
+				setTimeout(function() {
+					swal({
+						title: "Ошибка!",
+						text: "Не удалось отправить сообщение.",
+						html: true,
+						type: "error",
+						// customClass: "zoom-anim animated-custom",
+						confirmButtonText: "Ok",
+						confirmButtonColor: "#26A69A",
+						// animation: "false",
+					});
+					// Done Functions
+				}, 1000);
+			}
+		}).done(function() {
+			// alert("Спасибо за заявку!");
+			setTimeout(function() {
+				swal({
+					title: "Отлично!",
+					text: "Мы получили заявку и постараяемся связаться с тобой в ближайшее время))",
+					html: true,
+					type: "success",
+					// customClass: "zoom-anim animated-custom",
+					confirmButtonText: "Ok",
+					confirmButtonColor: "#26A69A",
+					// animation: "false",
+				});
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+
+			$.magnificPopup.close({
+          items: {
+              src: '#participate-popup',
+              // src: '#leave-request-popup',
+          },
+          type: 'inline'
+      });
+		});
+	});
 
 	// m tabs
 	$('.tabs').tabs();

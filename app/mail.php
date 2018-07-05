@@ -4,8 +4,8 @@
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-$project_name = "Project name";
-$admin_email = 'admin@mail.ru';
+$project_name = "Велопокатушки";
+$admin_email = 'antoha.xr2350@gmail.com';
 // $admin_email = get_option('admin_email');
 // $admin_email_2 = "your@mail.com";
 
@@ -44,5 +44,5 @@ if ( $method === 'POST' ) {
 
 $message = "<table style='width: 100%;'>$message</table>";
 
-mail($admin_email, $form_subject, $message, "From: $project_name <$admin_email>" . "\r\n" . "Reply-To: $admin_email" . "\r\n" . "X-Mailer: PHP/" . phpversion() . "\r\n" . "Content-type: text/html; charset=\"utf-8\"");
+mail($admin_email, $form_subject, $message, "From: $project_name <velo@antoha.pro>" . "\r\n" . "Reply-To: $admin_email" . "\r\n" . "X-Mailer: PHP/" . phpversion() . "\r\n" . "Content-type: text/html; charset=\"utf-8\"");
 // mail($admin_email_2, $form_subject, $message, "From: $project_name <$admin_email_2>" . "\r\n" . "Reply-To: $admin_email_2" . "\r\n" . "X-Mailer: PHP/" . phpversion() . "\r\n" . "Content-type: text/html; charset=\"utf-8\"");
