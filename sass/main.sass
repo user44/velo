@@ -181,6 +181,51 @@ ul.tabs
 		min-height: 450px
 		width: 100%
 
+.who-signed
+	margin: 0 0 20px
+.participants-box
+	.p-item
+		padding: 10px
+		text-align: center
+		border-radius: 10px
+		transition: .5s
+		a
+			text-decoration: none
+			color: #000
+		&:hover
+			box-shadow: 0 0 14px 4px rgba(0,0,0, 0.1)
+			.social
+				a
+				i
+					transform: scale(1.6)
+					transition: .3s
+					transition-delay: 0.2s
+		.social
+			a
+			i
+				color: #337ab7
+				transiton: .3s
+		.avatar-circle
+			margin: 0 0 10px
+			img
+				width: 136px
+				height: 136px
+				border-radius: 50%
+				object-fit: cover
+		.name
+			margin: 0 0 5px
+			font-size: 20px
+			// font-weight: 700
+
+@keyframes pulsar
+	0%
+		transform: none
+	100%
+		transform: scale(1.3)
+
+
+
+
 
 
 

@@ -30,7 +30,7 @@
 	<link rel="stylesheet" href="libs/materialize/dist/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.css?<?php echo time() ?>">
 
 </head>
 
@@ -79,6 +79,88 @@
 		</div>
 	</header>
 
+	<section class="who-signed">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="section-title-box">
+						<div class="section-title">
+							<h3>Кто уже записался</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="participants-box">
+				<div class="row">
+
+					<div class="col-sm-3">
+						<div class="p-item">
+							<a href="https://vk.com/id14649620" target="_blank">
+								<div class="avatar-circle"><img src="img/participants/antoha.jpg" alt=""></div>
+								<div class="name">Антон</div>
+								<div class="social">
+									<i class="fab fa-vk"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="p-item">
+							<a href="https://vk.com/id174574083" target="_blank">
+								<div class="avatar-circle"><img src="https://pp.userapi.com/c840728/v840728881/83714/colMsmdFfRU.jpg" alt=""></div>
+								<div class="name">Владислав</div>
+								<div class="social">
+									<i class="fab fa-vk"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="p-item">
+							<a href="https://vk.com/vitalik_geroy" target="_blank">
+								<div class="avatar-circle"><img src="https://pp.userapi.com/c311424/v311424864/3a96/ek8rOr8SQ1U.jpg" alt=""></div>
+								<div class="name">Виталий</div>
+								<div class="social">
+									<i class="fab fa-vk"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="p-item">
+							<a href="https://vk.com/id145599575" target="_blank">
+								<div class="avatar-circle"><img src="https://pp.userapi.com/c631828/v631828575/351a3/SqQrqBY8mKA.jpg" alt=""></div>
+								<div class="name">Максим</div>
+								<div class="social">
+									<i class="fab fa-vk"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="p-item">
+							<a href="https://vk.com/id168261593" target="_blank">
+								<div class="avatar-circle"><img src="https://pp.userapi.com/c841529/v841529433/75b49/NH84gSccpAg.jpg" alt=""></div>
+								<div class="name">Александр</div>
+								<div class="social">
+									<i class="fab fa-vk"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
 	<section class="where-ride">
 		
 		<div class="container">
@@ -86,7 +168,7 @@
 				<div class="col-sm-12">
 					<div class="section-title-box">
 						<div class="section-title">
-							<h3>Где катаемся?</h3>
+							<h3>Где катаемся</h3>
 						</div>
 					</div>
 				</div>
@@ -100,9 +182,9 @@
 					
 		      <ul class="tabs">
 		        <li class="tab col s2"><a href="#test1">30.06</a></li>
-		        <li class="tab col s2"><a class="active" href="#test2">7.07</a></li>
+		        <li class="tab col s2"><a href="#test2">7.07</a></li>
 		        <!-- <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li> -->
-		        <li class="tab col s2"><a href="#test3">14.07</a></li>
+		        <li class="tab col s2"><a class="active" href="#test3">14.07</a></li>
 		        <li class="tab col s2"><a href="#test4">21.07</a></li>
 		        <li class="tab col s2"><a href="#test5">28.07</a></li>
 		        <li class="tab col s2"><a href="#test6">4.08</a></li>

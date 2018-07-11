@@ -18,8 +18,11 @@ var gulp 					= require('gulp'),
 // BrowserSync
 gulp.task('browser-sync', function() {
 		browserSync.init({
-			server: {
-				baseDir: "./app"
+			// server: {
+			// 	baseDir: "./app"
+			// },
+			proxy: {
+				target: "http://velo.loc",
 			},
 			notify: false,
 			open: false
@@ -40,6 +43,7 @@ gulp.task('watch', function() {
 	gulp.watch('sass/*.sass', ['styles']);
 	gulp.watch('app/js/*.js').on("change", browserSync.reload);
 	gulp.watch('app/*.html').on("change", browserSync.reload);
+	gulp.watch('app/*.php').on("change", browserSync.reload);
 	gulp.watch('app/img/sprite/**/*', ['sprite']);
 });
 
